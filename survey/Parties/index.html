@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Political Parties Survey - PolitiTrade</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Political Parties Survey</h1>
+        <p>We want to know your views on political parties and their impact.</p>
+    </header>
+
+    <main>
+        <form id="partiesSurveyForm">
+            <!-- Political Party Feedback -->
+            <fieldset>
+                <legend>Your Opinion on Political Parties</legend>
+
+                <label for="partySupport">Which political party do you support the most?</label>
+                <input type="text" id="partySupport" name="partySupport" required><br><br>
+
+                <label for="partyLeader">Who do you think is the best leader of this party?</label>
+                <input type="text" id="partyLeader" name="partyLeader" required><br><br>
+
+                <label for="partyStrength">Rate the strength of the political party:</label>
+                <select id="partyStrength" name="partyStrength" required>
+                    <option value="">Select</option>
+                    <option value="1">Very Weak</option>
+                    <option value="2">Weak</option>
+                    <option value="3">Moderate</option>
+                    <option value="4">Strong</option>
+                    <option value="5">Very Strong</option>
+                </select><br><br>
+
+                <label for="partyTrending">Which party do you think is trending currently?</label>
+                <input type="text" id="partyTrending" name="partyTrending" required><br><br>
+
+                <label for="partyIssues">What issues should this party focus on?</label><br>
+                <textarea id="partyIssues" name="partyIssues" rows="4" cols="50"></textarea><br><br>
+            </fieldset>
+
+            <!-- Submit Button -->
+            <button type="submit">Submit</button>
+        </form>
+
+        <div id="partiesResponse" class="response"></div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 PolitiTrade. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

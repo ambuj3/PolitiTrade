@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Market Buy & Sell</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Stock Market Trading</h1>
+        <div class="buttons">
+            <button onclick="openForm('buyForm')">Buy</button>
+            <button onclick="openForm('sellForm')">Sell</button>
+        </div>
+
+        <div id="buyForm" class="form-container" style="display:none;">
+            <h2>Buy Stocks</h2>
+            <form onsubmit="submitForm(event, 'buy')">
+                <label for="stockName">Stock Name:</label>
+                <input type="text" id="buyStockName" required>
+                <label for="quantity">Quantity:</label>
+                <input type="number" id="buyQuantity" required>
+                <label for="price">Price per Stock:</label>
+                <input type="number" id="buyPrice" required>
+                <button type="submit">Submit Buy</button>
+            </form>
+        </div>
+
+        <div id="sellForm" class="form-container" style="display:none;">
+            <h2>Sell Stocks</h2>
+            <form onsubmit="submitForm(event, 'sell')">
+                <label for="stockName">Stock Name:</label>
+                <input type="text" id="sellStockName" required>
+                <label for="quantity">Quantity:</label>
+                <input type="number" id="sellQuantity" required>
+                <label for="price">Price per Stock:</label>
+                <input type="number" id="sellPrice" required>
+                <button type="submit">Submit Sell</button>
+            </form>
+        </div>
+
+        <div id="successMessage" class="success-message" style="display:none;"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

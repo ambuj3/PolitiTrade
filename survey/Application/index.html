@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PolitiTrade Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>PolitiTrade Survey</h1>
+        <p>We value your feedback! Please take a few moments to complete this survey.</p>
+    </header>
+
+    <main>
+        <form id="surveyForm" onsubmit="return submitSurvey(event) ">
+            
+            <!-- Demographic Information -->
+            <fieldset>
+                <legend>Demographic Information</legend>
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age" min="18" required><br><br>
+
+                <label for="region">Region:</label>
+                <select id="region" name="region" required>
+                    <option value="">Select Region</option>
+                    <option value="North">North</option>
+                    <option value="South">South</option>
+                    <option value="East">East</option>
+                    <option value="West">West</option>
+                </select><br><br>
+
+                <label for="profession">Profession:</label>
+                <input type="text" id="profession" name="profession" required><br><br>
+            </fieldset>
+
+            <!-- Feedback on the Platform -->
+            <fieldset>
+                <legend>Feedback on PolitiTrade</legend>
+
+                <label for="easeOfUse">How easy is it to use the platform?</label>
+                <select id="easeOfUse" name="easeOfUse" required>
+                    <option value="">Select</option>
+                    <option value="1">Very Difficult</option>
+                    <option value="2">Difficult</option>
+                    <option value="3">Neutral</option>
+                    <option value="4">Easy</option>
+                    <option value="5">Very Easy</option>
+                </select><br><br>
+
+                <label for="featuresRating">Rate the features of PolitiTrade:</label>
+                <select id="featuresRating" name="featuresRating" required>
+                    <option value="">Select</option>
+                    <option value="1">Poor</option>
+                    <option value="2">Fair</option>
+                    <option value="3">Good</option>
+                    <option value="4">Very Good</option>
+                    <option value="5">Excellent</option>
+                </select><br><br>
+
+                <label for="improvement">What features would you like to see improved or added?</label><br>
+                <textarea id="improvement" name="improvement" rows="4" cols="50"></textarea><br><br>
+            </fieldset>
+
+            <!-- Political Engagement -->
+            <fieldset>
+                <legend>Political Engagement</legend>
+
+                <label for="politicalInterest">How interested are you in politics?</label><br>
+                <input type="radio" id="interested" name="politicalInterest" value="Interested" required> Interested<br>
+                <input type="radio" id="neutral" name="politicalInterest" value="Neutral"> Neutral<br>
+                <input type="radio" id="notInterested" name="politicalInterest" value="Not Interested"> Not Interested<br><br>
+
+                <label for="politicalParty">Which political party do you support the most?</label><br>
+                <input type="text" id="politicalParty" name="politicalParty" required><br><br>
+
+                <label for="localLeaders">Are you interested in trading local political leaders (e.g., MLAs)?</label><br>
+                <input type="checkbox" id="localLeaders" name="localLeaders" value="Yes"> Yes<br><br>
+            </fieldset>
+
+            <!-- Submit Button -->
+            <button type="submit">Submit</button>
+        </form>
+
+        <!-- Success Message -->
+        <div id="response" class="response" style="display: none;">
+            <p>Thank you for filling out the survey! Your response has been submitted successfully.</p>
+        </div>
+    </main>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

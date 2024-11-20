@@ -1,0 +1,111 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and Layout */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Main Container */
+.main-container {
+    width: 100%;
+    max-width: 1200px;
+}
+
+/* Section Title */
+h2, h3 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Containers */
+.container {
+    margin-bottom: 40px;
+}
+
+/* Party Container */
+.party-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Party Cards */
+.party-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 200px;
+    text-align: center;
+    padding: 20px;
+}
+
+.party-card img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+h3 {
+    margin-top: 15px;
+    color: #2c3e50;
+}
+
+.invest-btn {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.invest-btn:hover {
+    background-color: #2980b9;
+}
+
+/* Data Section */
+.data-section {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.data-container {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    width: 48%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.small-container {
+    background-color: #ecf0f1;
+    padding: 10px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+/* Media Query for Responsiveness */
+@media (max-width: 768px) {
+    .party-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .data-section {
+        flex-direction: column;
+        align-items: center;
+    }
+}

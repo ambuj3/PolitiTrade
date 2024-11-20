@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trending Politician Survey - PolitiTrade</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Trending Politician Survey</h1>
+        <p>Let us know your thoughts on the most influential and trending politicians.</p>
+    </header>
+
+    <main>
+        <form id="politicianSurveyForm">
+            <!-- Trending Politician Feedback -->
+            <fieldset>
+                <legend>Your Opinion on Trending Politicians</legend>
+
+                <label for="politicianName">Who is the most trending politician right now?</label>
+                <input type="text" id="politicianName" name="politicianName" required><br><br>
+
+                <label for="politicianParty">Which party does this politician belong to?</label>
+                <input type="text" id="politicianParty" name="politicianParty" required><br><br>
+
+                <label for="politicianInfluence">Rate the influence of this politician:</label>
+                <select id="politicianInfluence" name="politicianInfluence" required>
+                    <option value="">Select</option>
+                    <option value="1">Very Low</option>
+                    <option value="2">Low</option>
+                    <option value="3">Moderate</option>
+                    <option value="4">High</option>
+                    <option value="5">Very High</option>
+                </select><br><br>
+
+                <label for="politicianImage">Do you think this politician has a positive public image?</label><br>
+                <input type="radio" id="positiveImage" name="politicianImage" value="Yes" required> Yes<br>
+                <input type="radio" id="negativeImage" name="politicianImage" value="No"> No<br><br>
+
+                <label for="politicianFuture">What do you think is the politician’s future in politics?</label><br>
+                <textarea id="politicianFuture" name="politicianFuture" rows="4" cols="50"></textarea><br><br>
+            </fieldset>
+
+            <!-- Submit Button -->
+            <button type="submit">Submit</button>
+        </form>
+
+        <div id="politicianResponse" class="response"></div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 PolitiTrade. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

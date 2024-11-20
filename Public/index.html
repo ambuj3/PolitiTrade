@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PolitiTrade - Political Trading Platform</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+   
+    <header>
+        <div class="container">
+            <a href="/" class="logo">
+                <img src="..\Images\polit.png" alt="PolitiTrade Logo">
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#trad">Trades</a></li>
+                    <li><a href="..\Investment\index.html">Invest Money</a></li>
+                    <li class="dropdown">
+                        <a  class="dropbtn">Survey</a>
+                        <div class="dropdown-content">
+                            <a href="..\survey\Application\index.html">App Survey</a>
+                            <a href="..\survey\Parties\index.html">P.Party Survey</a>
+                            <a href="..\survey\Policitician\index.html">P.Candidate Survey</a>
+                            <a href="..\PolitiTrade\survey\Result\index.html">Survey-Result</a>
+                        </div>
+                    </li>
+                    <li><a href="#event">Events</a></li>
+                    <li><a href="../login/loginh.html">Login</a></li>
+                    
+                    <li class="dropdown">
+                        <a  class="dropbtn">More</a>
+                        <div class="dropdown-content">
+                            <a href="/option1">Learn</a>
+                            <a href="/option2">Community</a>
+                            <a href="/option3">About me</a>
+                            <a href="/option1">Press</a>
+                            <a href="/option2">News</a>
+                            <a href="/option3">Report</a>
+                        </div>
+                    </li>
+                    
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section class="home">
+        <div class="text-container">
+            <h1>Welcome to <span>PolitiTrade</span></h1>
+            <p>Your platform to engage with politics in an innovative way!</p>
+            <!-- <button onclick="showMoreInfo()">Learn More</button> -->
+            <button >Download</button>
+            
+            <button onclick="window.location.href='C:/Users/santo/OneDrive/Desktop/PolitiTrade/login/loginh.html';" >Login</button>
+
+
+        </div>
+        <div class="image-container">
+            <img src="..\Images\stockindia.jpg" alt="PolitiTrade Image">
+        </div>
+    </section>
+
+
+  
+
+
+
+
+    <main>
+        <section class="container" id="trad">
+            <!-- Search bar with India-specific fields and options -->
+            <div class="search-bar">
+                <div class="search-input">
+                    <input type="text" placeholder="Search Politician by Name" class="form-control" id="politicianName">
+                </div>
+                <div class="search-input">
+                    <select class="form-control" id="state">
+                        <option value="">State/Union Territory</option>
+                        <option value="UP">Uttar Pradesh</option>
+                        <option value="MH">Maharashtra</option>
+                        <option value="DL">Delhi</option>
+                        <option value="KA">Karnataka</option>
+                        <option value="TN">Tamil Nadu</option>
+                        <!-- Add more states/UTs as needed -->
+                    </select>
+                </div>
+                <div class="search-input">
+                    <select class="form-control" id="party">
+                        <option value="">Political Party</option>
+                        <option value="BJP">BJP</option>
+                        <option value="INC">Congress</option>
+                        <option value="AAP">AAP</option>
+                        <option value="SP">Samajwadi Party</option>
+                        <option value="TMC">TMC</option>
+                        <!-- Add more parties as needed -->
+                    </select>
+                </div>
+                <div class="search-input">
+                    <select class="form-control" id="position">
+                        <option value="">Position</option>
+                        <option value="MP">Member of Parliament</option>
+                        <option value="MLA">Member of Legislative Assembly</option>
+                        <option value="CM">Chief Minister</option>
+                        <option value="PM">Prime Minister</option>
+                        <!-- Add more positions as needed -->
+                    </select>
+                </div>
+                <div class="search-input">
+                    <select class="form-control" id="sector">
+                        <option value="">Sector of Influence</option>
+                        <option value="Education">Education</option>
+                        <option value="Healthcare">Healthcare</option>
+                        <option value="Infrastructure">Infrastructure</option>
+                        <option value="Agriculture">Agriculture</option>
+                        <option value="Technology">Technology</option>
+                        <!-- Add more sectors as needed -->
+                    </select>
+                </div>
+                <div class="search-input">
+                    <select class="form-control" id="gender">
+                        <option value="">Gender</option>
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+                <div class="search-input">
+                    <input type="text" placeholder="Market Cap" class="form-control" id="marketCap">
+                </div>
+                <div class="search-input">
+                    <select class="form-control" id="assetType">
+                        <option value="">Asset Type</option>
+                        <option value="Equity">Equity</option>
+                        <option value="Bond">Bond</option>
+                        <option value="Real Estate">Real Estate</option>
+                        <option value="Cryptocurrency">Cryptocurrency</option>
+                        <!-- Add more asset types as needed -->
+                    </select>
+                </div>
+                <div class="search-input">
+                    <input type="text" placeholder="Transaction Label" class="form-control" id="transactionLabel">
+                </div>
+            </div>
+
+            <!-- Search button -->
+            <div class="search-action">
+                <button class="btn btn-primary" id="searchAll">Search</button>
+            </div>
+
+            <!-- Stats section with India-specific data -->
+            <div class="stats">
+                <div class="stat">
+                    <h3>Total Trades</h3>
+                    <p>1,234</p>
+                </div>
+                <div class="stat">
+                    <h3>Active Politicians</h3>
+                    <p>567</p>
+                </div>
+                <div class="stat">
+                    <h3>Popular Constituencies</h3>
+                    <p>45</p>
+                </div>
+                <div class="stat">
+                    <h3>Current Sentiment Trends</h3>
+                    <p>Positive</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <body>
+        <section id="event">
+            <div class="leftBox">
+                <div class="content">
+                    <h1>Upcoming Events and Insights</h1>
+                    <p>
+                        Join PolitiTrade in shaping the future of political engagement! Our events bring together political enthusiasts, data analysts, and tech experts to explore the intersections of technology and political investment. Learn about trends in Indian political sentiment, predictive analytics, and the latest insights into the political "stock" of parties and candidates. Through interactive sessions, we aim to foster a well-informed citizenry and promote responsible political investment.
+                    </p>
+                </div>
+            </div>
+    
+            <div class="events">
+                <ul>
+                    <li>
+                        <div class="time">
+                            <h2>15 <br><span>March</span></h2>
+                        </div>
+                        <div class="details">
+                            <h3>Political Sentiment Analysis Workshop</h3>
+                            <p>
+                                Discover the power of sentiment analysis in politics. This workshop will cover techniques in real-time sentiment tracking for Indian politicians and parties. Join experts for hands-on experience with analytics tools to measure political trends and public opinion.
+                            </p>
+                            <a href="#">View Details</a>
+                        </div>
+                        <div style="clear: both;"></div>
+                    </li>
+    
+                    <li>
+                        <div class="time">
+                            <h2>27 <br><span>May</span></h2>
+                        </div>
+                        <div class="details">
+                            <h3>Predictive Analytics in Political Trading</h3>
+                            <p>
+                                Dive into predictive modeling with a focus on political trading. This event will explore methods to predict political market trends, analyze candidate popularity, and develop trading strategies based on data. Perfect for enthusiasts looking to gain an edge in PolitiTrade's political trading platform.
+                            </p>
+                            <a href="#">View Details</a>
+                        </div>
+                        <div style="clear:both;"></div>
+                    </li>
+                    
+                    <li>
+                        <div class="time">
+                            <h2>12 <br><span>August</span></h2>
+                        </div>
+                        <div class="details">
+                            <h3>Engaging with Local Leaders: MLA Trading</h3>
+                            <p>
+                                Explore the unique dynamics of local political trading. In this event, we’ll discuss the opportunities and challenges in tracking MLA popularity and predicting trends in local elections. Gain insight into community sentiment and learn how to make data-driven trades on local leaders.
+                            </p>
+                            <a href="#">View Details</a>
+                        </div>
+                        <div style="clear:both;"></div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </body>
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 PolitiTrade. All rights reserved. | Privacy Policy | Terms of Use</p>
+            <p>Connecting you with the pulse of Indian politics and investment.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
